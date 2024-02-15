@@ -4,27 +4,27 @@ import OrderItem from '../ui/order-item.vue'
 const orders = [
   {
     id: '1',
-    title: 'test',
     start: new Date(),
     end: new Date(),
-    place: '1',
-    space: '1'
+    place: '12',
+    space: 'City 1, building 3',
+    img: '/public/stock-imgs/places/place1.jpg'
   },
   {
     id: '2',
-    title: 'test',
     start: new Date(),
     end: new Date(),
-    place: '1',
-    space: '1'
+    place: '22',
+    space: 'City 4, building 7',
+    img: '/public/stock-imgs/places/place1.jpg'
   },
   {
     id: '3',
-    title: 'test',
     start: new Date(),
     end: new Date(),
-    place: '1',
-    space: '1'
+    place: '14',
+    space: 'City 2, building 1',
+    img: '/public/stock-imgs/places/place1.jpg'
   }
 ]
 </script>

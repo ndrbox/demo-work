@@ -2,11 +2,51 @@
 import PlaceItem from '../ui/place-item.vue'
 
 const places = [
-  { id: '1', name: 'name', description: 'desc', img: '/public/stock-imgs/places/place1.jpg', location:'city', price:10, rating:5.0 },
-  { id: '2', name: 'name', description: 'desc', img: '/public/stock-imgs/places/place2.jpg', location:'city', price:10, rating:5.0 },
-  { id: '3', name: 'name', description: 'desc', img: '/public/stock-imgs/places/place3.jpg', location:'city', price:10, rating:5.0 },
-  { id: '4', name: 'name', description: 'desc', img: '/public/stock-imgs/places/place4.jpg', location:'city', price:10, rating:5.0 },
-  { id: '5', name: 'name', description: 'desc', img: '/public/stock-imgs/places/place5.jpg', location:'city', price:10, rating:5.0 }
+  {
+    id: '1',
+    name: 'name',
+    description: 'desc',
+    img: '/public/stock-imgs/places/place1.jpg',
+    location: 'city',
+    price: 10,
+    rating: 5.0
+  },
+  {
+    id: '2',
+    name: 'name',
+    description: 'desc',
+    img: '/public/stock-imgs/places/place2.jpg',
+    location: 'city',
+    price: 10,
+    rating: 5.0
+  },
+  {
+    id: '3',
+    name: 'name',
+    description: 'desc',
+    img: '/public/stock-imgs/places/place3.jpg',
+    location: 'city',
+    price: 10,
+    rating: 5.0
+  },
+  {
+    id: '4',
+    name: 'name',
+    description: 'desc',
+    img: '/public/stock-imgs/places/place4.jpg',
+    location: 'city',
+    price: 10,
+    rating: 5.0
+  },
+  {
+    id: '5',
+    name: 'name',
+    description: 'desc',
+    img: '/public/stock-imgs/places/place5.jpg',
+    location: 'city',
+    price: 10,
+    rating: 5.0
+  }
 ]
 
 const handleDeleteAction = (id: string) => {
@@ -14,12 +54,12 @@ const handleDeleteAction = (id: string) => {
 }
 </script>
 <template>
-  <div>
-    <PlaceItem
-      v-for="place in places"
-      :key="place.id"
-      :place="place"
-      @onDelete="handleDeleteAction(place.id)"
-    ></PlaceItem>
-  </div>
+  <h3>Top places</h3>
+  <p>100+ workspace</p>
+  <PlaceItem
+    v-for="place in places"
+    :key="place.id"
+    :place="place"
+    @onDelete="handleDeleteAction(place.id)"
+  ></PlaceItem>
 </template>

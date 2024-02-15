@@ -9,7 +9,7 @@ defineProps<{
 </script>
 
 <template>
-  <v-card theme="dark" rounded="lg" class="ma-1" min-width="204" variant="text">
+  <v-card theme="dark" rounded="lg" variant="text">
     <v-img cover :src="space.img" class="text-white fill-height">
       <v-card-item>
         <v-card-title>
