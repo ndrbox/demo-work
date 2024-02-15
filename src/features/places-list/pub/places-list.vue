@@ -1,9 +1,15 @@
 <script setup lang="ts">
 import PlaceItem from '../ui/place-item.vue'
 
-const places = [{ id: '1', name: 'name', description: 'desc' }]
+const places = [
+  { id: '1', name: 'name', description: 'desc', img: '/public/stock-imgs/places/place1.jpg', location:'city', price:10, rating:5.0 },
+  { id: '2', name: 'name', description: 'desc', img: '/public/stock-imgs/places/place2.jpg', location:'city', price:10, rating:5.0 },
+  { id: '3', name: 'name', description: 'desc', img: '/public/stock-imgs/places/place3.jpg', location:'city', price:10, rating:5.0 },
+  { id: '4', name: 'name', description: 'desc', img: '/public/stock-imgs/places/place4.jpg', location:'city', price:10, rating:5.0 },
+  { id: '5', name: 'name', description: 'desc', img: '/public/stock-imgs/places/place5.jpg', location:'city', price:10, rating:5.0 }
+]
 
-const handleDeleteAction = (id) => {
+const handleDeleteAction = (id: string) => {
   console.log(id)
 }
 </script>

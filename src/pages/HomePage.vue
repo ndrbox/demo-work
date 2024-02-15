@@ -16,6 +16,8 @@ import OrderList from '../features/order-list/pub/order-list.vue'
             center center;
         "
       >
+      <h2>Hello</h2>
+      <p>Select space</p>
         <SpaceList />
         <PlacesList />
         <OrderList />

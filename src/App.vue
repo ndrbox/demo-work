@@ -30,7 +30,14 @@ export default {
       </v-list>
     </v-navigation-drawer>
     <v-main>
-      <v-btn variant="flat" dark icon="mdi-menu" @click="drawer = !drawer"></v-btn>
+      <v-btn
+        v-show="!drawer"
+        variant="flat"
+        icon="mdi-menu"
+        density="compact"
+        @click="drawer = !drawer"
+      >
+      </v-btn>
       <RouterView />
     </v-main>
   </v-layout>

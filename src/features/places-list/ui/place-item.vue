@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PlaceListElement } from '../model/types'
+import type { PlaceListElement } from '../model/types'
 
 defineProps<{
   place: PlaceListElement
@@ -7,21 +7,33 @@ defineProps<{
 </script>
 
 <template>
-  <v-card class="mx-auto" max-width="344" variant="flat">
-    <v-card-item>
-      <div>
-        <div class="text-overline mb-1">
-          {{ place.name }}
-        </div>
-        <div class="text-h6 mb-1">
-          {{ place.name }}
-        </div>
-        <div class="text-caption">{{ place.description }}</div>
-      </div>
-    </v-card-item>
+  <v-card class="pa-4" max-width="424" variant="flat">
+    <div class="d-flex flex-no-wrap">
+      <v-img cover :src="place.img" rounded="lg" height="168" max-width="168"></v-img>
 
-    <v-card-actions>
-      <v-btn @click="$emit('onDelete')"> Delete </v-btn>
-    </v-card-actions>
+      <div>
+        <v-card-title> {{ place.name }}</v-card-title>
+        <v-card-text>
+          <v-row class="mx-0">
+            <v-rating
+              :value="place.rating"
+              color="amber"
+              dense
+              half-increments
+              readonly
+              size="14"
+            ></v-rating>
+
+            <div class="grey--text ms-4">{{ place.rating }} (413)</div>
+          </v-row>
+
+          <div class="my-4 text-subtitle-1">${{ place.price }}/day</div>
+
+          <div>
+            {{ place.description }}
+          </div>
+        </v-card-text>
+      </div>
+    </div>
   </v-card>
 </template>
