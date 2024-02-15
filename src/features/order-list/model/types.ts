@@ -1,4 +1,5 @@
-export type Order = {
+export type OrderListElement = {
+  id: string
   title: string
   start: Date
   end: Date

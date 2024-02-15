@@ -1,10 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const state = {
+  
+}
+</script>
 
 <template>
   <form>
-    <v-text-field> </v-text-field>
+    <p>{{ state.title }}</p>
+    <v-text-field v-model="state.title" label="title" required></v-text-field>
     <v-row justify="space-around">
-      <v-date-picker elevation="24" range></v-date-picker>
+      <v-date-picker flat v-model="state.start" elevation="24"></v-date-picker>
     </v-row>
+    <v-btn>Create order</v-btn>
   </form>
 </template>

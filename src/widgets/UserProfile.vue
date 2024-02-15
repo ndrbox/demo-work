@@ -8,15 +8,14 @@ const user = {
 </script>
 
 <template>
-  <div>
-    <v-avatar color="primary">
+  <div class="mx-auto text-center">
+    <v-avatar color="red" size="84">
       <img alt="Vue logo" class="logo" src="@/assets/logo.svg" />
     </v-avatar>
-    <h3>{{ user.name }}</h3>
-    <p class="text-caption mt-1">
+    <h4 class="mt-2">{{ user.name }}</h4>
+    <p class="text-caption">
       {{ user.email }}
     </p>
-
-    <SignOutBtn />
   </div>
+  <SignOutBtn />
 </template>

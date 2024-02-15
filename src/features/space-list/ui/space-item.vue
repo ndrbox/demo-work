@@ -1,14 +1,16 @@
 <script setup lang="ts">
-import { SpaceListElement } from '../model/types'
+import type { SpaceListElement } from '../model/types'
 
 defineProps<{
   space: SpaceListElement
 }>()
+
+
 </script>
 
 <template>
-  <v-card class="mx-auto" max-width="344" variant="flat">
-    <v-img cover :src="`https://cdn.vuetifyjs.com/images/cards/house.jpg`" class="align-end">
+  <v-card theme="dark" rounded="lg" class="ma-1" min-width="204" variant="text">
+    <v-img cover :src="space.img" class="text-white fill-height">
       <v-card-item>
         <v-card-title>
           {{ space.name }}
