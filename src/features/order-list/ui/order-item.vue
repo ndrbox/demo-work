@@ -10,7 +10,7 @@ defineProps<{
   <v-card class="mt-4 pa-4" variant="outlined" rounded="lg">
     <div class="d-flex flex-no-wrap">
 
-      <v-img cover :src="order.img" rounded height="128" width="128"></v-img>
+      <v-img cols="4" cover max-width="128" :src="order.img" rounded></v-img>
       <v-card-item>
         <v-card-title>
           {{ order.space }}

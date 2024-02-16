@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import type { PlaceListElement } from '../model/types'
+import { ROUTES } from '@/shared/constants/routes'
+
 
 defineProps<{
   place: PlaceListElement
@@ -7,7 +9,7 @@ defineProps<{
 </script>
 
 <template>
-  <v-card class="py-2" max-width="424" variant="flat">
+  <v-card @click="$router.push( `${ROUTES.PLACE}/:id`)" class="py-2" max-width="424" variant="flat">
     <div class="d-flex flex-no-wrap">
       <v-img cover :src="place.img" rounded="lg" height="168" max-width="168"></v-img>
 

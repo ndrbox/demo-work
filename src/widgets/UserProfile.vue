@@ -17,5 +17,5 @@ const user = {
       {{ user.email }}
     </p>
   </div>
-  <SignOutBtn />
+  <SignOutBtn class="mt-4"/>
 </template>

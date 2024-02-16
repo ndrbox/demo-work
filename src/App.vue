@@ -5,9 +5,9 @@ import UserProfile from '@/widgets/UserProfile.vue'
 
 const drawer = ref(false)
 const menu = [
-  { name: 'home', path: '/' },
-  { name: 'order', path: '/order' },
-  { name: 'about', path: '/about' }
+  { name: 'home', path: '/', icon:'mdi-home' },
+  { name: 'order', path: '/order', icon: 'mdi-desk' },
+  { name: 'about', path: '/about', icon: 'mdi-ticket' }
 ]
 </script>
 
@@ -24,7 +24,11 @@ export default {
       <UserProfile />
 
       <v-list nav>
-        <v-list-item rounded="lg" v-for="item in menu" :key="item.name" :to="item.path">
+        <v-list-item rounded="xl" v-for="item in menu" :key="item.name" :to="item.path">
+          <v-icon class="mx-2">
+            {{ item.icon }}
+          </v-icon>
+          
           {{ item.name }}
         </v-list-item>
       </v-list>

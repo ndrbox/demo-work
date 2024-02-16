@@ -27,8 +27,18 @@ const router = createRouter({
     },
     {
       path: ROUTES.ORDER,
-      name: 'sign-up',
+      name: 'order',
       component: () => import('../pages/OrderPage.vue')
+    },
+    {
+      path: `${ROUTES.SPACE}/:id`,
+      name: 'space',
+      component: () => import('../pages/SpacePage.vue')
+    },
+    {
+      path: `${ROUTES.PLACE}/:id`,
+      name: 'place',
+      component: () => import('../pages/PlacePage.vue')
     }
   ]
 })
