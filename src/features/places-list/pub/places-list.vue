@@ -6,7 +6,7 @@ const places = [
     id: '1',
     name: 'name',
     description: 'desc',
-    img: '/public/stock-imgs/places/place1.jpg',
+    img: 'stock-imgs/places/place1.jpg',
     location: 'city',
     price: 10,
     rating: 5.0
@@ -15,7 +15,7 @@ const places = [
     id: '2',
     name: 'name',
     description: 'desc',
-    img: '/public/stock-imgs/places/place2.jpg',
+    img: 'stock-imgs/places/place2.jpg',
     location: 'city',
     price: 10,
     rating: 5.0
@@ -24,7 +24,7 @@ const places = [
     id: '3',
     name: 'name',
     description: 'desc',
-    img: '/public/stock-imgs/places/place3.jpg',
+    img: 'stock-imgs/places/place3.jpg',
     location: 'city',
     price: 10,
     rating: 5.0
@@ -33,7 +33,7 @@ const places = [
     id: '4',
     name: 'name',
     description: 'desc',
-    img: '/public/stock-imgs/places/place4.jpg',
+    img: 'stock-imgs/places/place4.jpg',
     location: 'city',
     price: 10,
     rating: 5.0
@@ -42,7 +42,7 @@ const places = [
     id: '5',
     name: 'name',
     description: 'desc',
-    img: '/public/stock-imgs/places/place5.jpg',
+    img: 'stock-imgs/places/place5.jpg',
     location: 'city',
     price: 10,
     rating: 5.0

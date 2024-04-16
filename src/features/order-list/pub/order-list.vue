@@ -8,7 +8,7 @@ const orders = [
     end: new Date(),
     place: '12',
     space: 'City 1, building 3',
-    img: '/public/stock-imgs/places/place1.jpg'
+    img: 'stock-imgs/places/place1.jpg'
   },
   {
     id: '2',
@@ -16,7 +16,7 @@ const orders = [
     end: new Date(),
     place: '22',
     space: 'City 4, building 7',
-    img: '/public/stock-imgs/places/place1.jpg'
+    img: 'stock-imgs/places/place1.jpg'
   },
   {
     id: '3',
@@ -24,7 +24,7 @@ const orders = [
     end: new Date(),
     place: '14',
     space: 'City 2, building 1',
-    img: '/public/stock-imgs/places/place1.jpg'
+    img: 'stock-imgs/places/place1.jpg'
   }
 ]
 </script>
